@@ -223,7 +223,7 @@ h6,
 		}
 		#about img {
 			width: 380px;
-			height: 350px;
+			height: 340px;
 			padding: 8px;
 		}
 		.about-text p.description {
@@ -238,7 +238,7 @@ h6,
 		}
 		#about img {
 			width: 380px;
-			height: 350px;
+			height: 340px;
 			padding: 8px;
 		}
 		.about-text p.description {
@@ -263,7 +263,7 @@ h6,
 
 #skills {
 	/*background: linear-gradient(rgba(243, 207, 85, 0.1), rgba(243, 207, 85, 0.9) ), url("img/skills/photo-1531685250784-7569952593d2.jfif") left / cover no-repeat;*/
-	background: linear-gradient(rgba(254,197,3, 0.2), rgba(254,197,3, 0.7) );
+	/*background: linear-gradient(rgba(254,197,3, 0.2), rgba(254,197,3, 0.7) );*/
 	background: url("img/skills/photo-1524007502914-1e3cd354837666.jpg") bottom center / cover no-repeat;
 	color: black;
 }
