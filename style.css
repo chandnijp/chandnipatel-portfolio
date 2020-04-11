@@ -510,8 +510,6 @@ h6,
 /*--------------------------------------------------------------------*/
 /*PORTFOLIO PROJECT MODALS*/
 
-/*MODAL 1*/
-
 .project-modal .modal-dialog {
 	max-width: 60vw;
 	margin: 0 auto;
@@ -550,7 +548,22 @@ h6,
     transition-duration: 0.2s;
 }
 
+.project-modal .modal-content .github-link-header {
+	padding-top: 30px;
+}
+
+.project-modal .modal-content .github-link a {
+	color: gray;
+	text-decoration: none;
+}
+
+.project-modal .modal-content .github-link a:hover {
+	font-weight: bold;
+    transition-duration: 0.2s;
+}
+
 .project-modal .modal-content a.modal-exit {
+	padding-top: 30px;
 	font-size: 2.5em;
 	color: black;
 }
