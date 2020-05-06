@@ -481,7 +481,6 @@ h6,
 
 #projects .project-item .project-caption p {
 	font-size: 16px;
-	font-style: italic;
 }
 
 #projects * {
@@ -578,6 +577,10 @@ h6,
 	-webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
+}
+
+.project-modal ol {
+	font-size: 0.8em;
 }
 
 @media (max-width: 767px) {
