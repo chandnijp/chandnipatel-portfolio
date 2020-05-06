@@ -580,7 +580,8 @@ h6,
 }
 
 .project-modal ol {
-	font-size: 0.8em;
+	font-size: 0.9em;
+	text-align: left;
 }
 
 @media (max-width: 767px) {
