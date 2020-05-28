@@ -473,7 +473,7 @@ h6,
 
 #projects .project-item .project-caption {
 	max-width: 400px;
-	margin: 0 auto;
+	margin: 0 7px;
 	padding: 25px 0;
 	text-align: center;
 	background-color: #fff;
@@ -481,7 +481,6 @@ h6,
 
 #projects .project-item .project-caption p {
 	font-size: 16px;
-	font-style: italic;
 }
 
 #projects * {
@@ -509,8 +508,6 @@ h6,
 
 /*--------------------------------------------------------------------*/
 /*PORTFOLIO PROJECT MODALS*/
-
-/*MODAL 1*/
 
 .project-modal .modal-dialog {
 	max-width: 60vw;
@@ -550,7 +547,22 @@ h6,
     transition-duration: 0.2s;
 }
 
+.project-modal .modal-content .github-link-header {
+	padding-top: 30px;
+}
+
+.project-modal .modal-content .github-link a {
+	color: gray;
+	text-decoration: none;
+}
+
+.project-modal .modal-content .github-link a:hover {
+	font-weight: bold;
+    transition-duration: 0.2s;
+}
+
 .project-modal .modal-content a.modal-exit {
+	padding-top: 30px;
 	font-size: 2.5em;
 	color: black;
 }
@@ -565,6 +577,11 @@ h6,
 	-webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
+}
+
+.project-modal ol {
+	font-size: 0.9em;
+	text-align: left;
 }
 
 @media (max-width: 767px) {
@@ -625,14 +642,8 @@ span.copyright {
 	color: white;
 }
 
-p.email {
-	color: white;
-	font-size: 1.2rem;
-	padding: 20px 0;
-}
-
 ul.social-buttons {
-	margin-bottom: 0;
+	margin: 20px 0;
 }
 
 ul.social-buttons i {
