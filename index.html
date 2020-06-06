@@ -85,10 +85,10 @@
 		  <img src="img/about/IMG_19524.jpg">
 		</div>
 		<div class="col-lg-6 col-md-12 about-text text-center">
-		  <p class="description">I am an up and coming web developer, based in London.<br><br>
+		  <p class="description">I am a self-taught, Full Stack Web Developer, based in London.<br><br>
 			With a background heavily focused in both Art and Maths, I have naturally found myself in the development world. I enjoy the creative, imaginative aspect of front-end development as well as the complex, problem-solving side to the back-end.<br><br>
-			I am curious by nature and enjoy figuring out how things work. I am also a perfectionist; attention to detail is key and I like to play around with colour; building websites that are simple and clean, yet attractive.<br><br>
-			Having built web applications using a number of languages and completing Colt Steel's Web Development Bootcamp and Andrei's Zero to Mastery course, I have a strong foundation in web design and development.
+			I am curious by nature and enjoy figuring out how things work. I am also a perfectionist; attention to detail is key and I like to play around with colour; building functional web applications that are thoughful, engaging and attractive.<br><br>
+			Having completed several web development bootcamps and built web applications using a variety of front and back-end technologies, I have a strong foundation in web design and development.
 		  </p>
 		</div>
   	  </div>
@@ -112,7 +112,7 @@
               <i class="fas fa-angle-down"></i>
       		<li class="skills-list">Foundation Diploma in <span>Art</span> and <span>Design</span></li>
               <i class="fas fa-angle-down"></i>
-      		<li class="skills-list">4 years work experience in a large, multinational IT corporation, working in various <span>technical</span> and <span>business</span> roles</li>
+      		<li class="skills-list">4 years experience in a large, multinational IT corporation, working in various <span>technical</span> and <span>business</span> roles</li>
               <i class="fas fa-angle-down"></i>
       		<li class="skills-list"><span>International</span> work experience in Sydney</li>
               <i class="fas fa-angle-down"></i>
@@ -318,6 +318,37 @@
     		<!-- EMPTY FOR NOW -->
     	</div>
     	<div class="col-lg-4">
+		  
+		  <!--formspree.html-->
+		  <!-- <form action="https://formspree.io/mzbjrobp" method="POST"> -->
+		  <form class="contact-form" action="https://formspree.io/chandnipatel10@hotmail.com" method="POST">
+			<input type="hidden" name="_subject" value="Chandni's Form">                 
+			<!-- <input type="hidden" name="_next" value="/thanks.html" > -->
+			<input type="hidden" name="_next" value="https://chandnijp.github.io/chandnipatel-portfolio/"/>
+			<div class="form-group">
+				<!-- <label >Name:</label> -->
+				<input type="text" class="form-control" id="name" placeholder="Name">
+				<div class="invalid-feedback">
+					Name must be between 2 and 20 characters
+				</div>
+			</div>
+			<div class="form-group">
+				<!-- <label>Email:</label> -->
+				<input type="text" class="form-control" id="email" placeholder="Email address">
+				<div class="invalid-feedback">
+					Enter a valid email address
+				</div>
+			</div>
+			<div class="form-group">
+				<!-- <label>Message:</label> -->
+				<textarea type="text" class="form-control" id="message" placeholder="Write your message here.."></textarea>
+				<div class="invalid-feedback">
+					Enter a message
+				</div>
+			</div>
+			<input type="submit" value="Send" class="btn btn-info btn-block">
+		  </form>
+
     	  <ul class="list-inline social-buttons">
 			<li class="list-inline-item">
 			  <a href="https://github.com/chandnijp" target="_blank"><i class="fab fa-github"></i></a>
@@ -331,7 +362,7 @@
     	  </ul>
         </div>  
         <div class="col-lg-4">
-          <span class="copyright">&copy; 2020 | Made by Chandni Patel</span>
+          <span class="copyright">&copy; 2020 | Made with <i class="fas fa-heart"></i> by Chandni Patel</span>
         </div>			
   	  </div>
   	</div>
@@ -735,6 +766,8 @@
       });
     });
   </script>
+
+  <!-- <script src="./index.js"></script> -->
 
 </body>
 </html>

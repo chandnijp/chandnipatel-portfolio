@@ -421,6 +421,10 @@ h6,
 /*--------------------------------------------------------------------*/
 /*PORTFOLIO PROJECTS GRID*/
 
+#projects {
+	background-color: #eee;
+}
+
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
@@ -634,6 +638,10 @@ h6,
 	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.25));
 }
 
+.contact-form {
+	padding-top: 20px;
+}
+
 span.copyright {
 	font-size: 1rem;
 	position: absolute;
@@ -643,7 +651,7 @@ span.copyright {
 }
 
 ul.social-buttons {
-	margin: 20px 0;
+	margin: 40px 0 20px 0;
 }
 
 ul.social-buttons i {
