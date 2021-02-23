@@ -41,6 +41,10 @@ h6,
 	background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
+.row {
+	margin: 0;
+}
+
 
 /*------------------------------------------------------------------*/
 /*NAVIGATION*/
@@ -59,10 +63,16 @@ h6,
 	color: white; text-shadow: black 0.2em 0.2em 0.3em;
 	letter-spacing: 2px;
 	padding: 0px 20px;
+	transition-property: transform;
+	transition-duration: 0.2s;
 }
 
 #mainNavbar .nav-link.active, #mainNavbar .nav-link:hover {
-	color: #fec503;
+	font-weight: 500;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 #mainNavbar .navbar-brand {
@@ -72,7 +82,15 @@ h6,
 }
 
 #mainNavbar .navbar-brand.active, #mainNavbar .navbar-brand:active, #mainNavbar .navbar-brand:focus, #mainNavbar .navbar-brand:hover {
-	color: #fec503;
+	transition-property: transform;
+	transition-duration: 0.2s;
+}
+
+#mainNavbar .navbar-brand.active, #mainNavbar .navbar-brand:active, #mainNavbar .navbar-brand:focus, #mainNavbar .navbar-brand:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .navbar.scrolled {
@@ -123,7 +141,7 @@ h6,
 .mainHeader {
 	text-align: center;
 	color: white; text-shadow: black 0.2em 0.2em 0.3em;
-	background: url("img/header/DSC_0791.jpg") bottom center / cover no-repeat;
+	background: url("img/header/DSC_0791-min.jpg") bottom center / cover no-repeat;
 	height: 600px;
 }
 
@@ -192,9 +210,9 @@ h6,
 /*------------------------------------------------------------------*/
 /*ABOUT ME*/
 
-#about img {
-	width: 400px;
-	height: 380px;
+#about .about-image img {
+	width: 270px;
+	height: 280px;
 	border-radius: 50%;
 	border: 7px solid rgba(255, 92, 70, 0.8);
 	padding: 10px;
@@ -214,7 +232,8 @@ h6,
 	justify-content: center;
 }
 
-#about .about-text .description {
+#about .about-text .description,
+#about .skills-languages .description {
 	font-size: 1rem;
 	font-family: 'Montserrat', sans-serif;
 	padding-top: 25px;
@@ -228,14 +247,14 @@ h6,
 		.about-image {
 			padding-top: 20px;
 		}
-		#about img {
-			width: 380px;
-			height: 350px;
+		#about .about-image img {
+			width: 280px;
+			height: 270px;
 			padding: 8px;
 		}
-		.about-text p.description {
-			padding-top: 40px;
-			padding: 0 10px;
+		#about .about-text .description,
+		#about .skills-languages .description {
+			padding: 40px 10px 0 10px;
 		}
 	}
 
@@ -243,24 +262,25 @@ h6,
 		.about-image {
 			padding-top: 20px;
 		}
-		#about img {
+		#about .about-image img {
 			width: 380px;
 			height: 350px;
 			padding: 8px;
 		}
-		.about-text p.description {
+		#about .about-text .description,
+		#about .skills-languages .description {
 			padding-top: 40px;
 		}
 	}
 
 	@media(min-width: 992px) {
-		#about img {
+		#about .about-image img {
 			width: 400px;
 			height: 380px;
 			padding: 10px;
 		}
-		.about-text p.description {
-			padding: 0;
+		#about .skills-languages .description {
+			padding-top: 60px;
 		}
 	}
 
@@ -283,6 +303,13 @@ h6,
 	background-image: linear-gradient(to right, #88afc4, #333, #88afc4);
 }
 
+#skills .skills-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
 #skills .skills-other ul {
 	padding: 0;
 }
@@ -303,7 +330,7 @@ h6,
 	color: black;
 }
 
-#skills .skills-languages .container {
+.skills-languages .container {
 	display: grid;
 	padding: 0 20px;
 	margin: 0 auto;
@@ -312,36 +339,36 @@ h6,
 	grid-template-rows: 1fr;
 }
 
-#skills .skills-languages .language {
+.skills-languages .language {
 	position: relative;
 	display: inline-block;
 	padding-bottom: 40px;
 }
 
-#skills .skills-languages i {
+.skills-languages i {
 	color: black;
 	font-size: 80px;
 }
 
-#skills .skills-languages img {
+.skills-languages img {
     width: 75%;
     height: 90%;
     color: black;
 }
 
-#skills .skills-languages img {
+.skills-languages img {
 	transition-property: transform;
 	transition-duration: all 300ms;
 }
 
-#skills .skills-languages .language:hover {
+.skills-languages .language:hover {
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
 
-#skills .skills-languages .language .text {
+.skills-languages .language .text {
 	visibility: hidden;
 	font-size: 1rem;
 	width: 100%;
@@ -352,67 +379,73 @@ h6,
 	z-index: 1;
 }
 
-#skills .skills-languages .language:hover .text {
+.skills-languages .language:hover .text {
 	visibility: visible;
 }
 
 @media (max-width: 767px) {
-		#skills .skills-languages i {
+		.skills-languages i {
 			font-size: 75px;
 		}
-		#skills .skills-languages img {
+		.skills-languages img {
 		    width: 60%;
 		    height: 85%;
 		}
-		#skills .skills-languages .language {
+		.skills-languages .language {
 		  	padding-top: 40px;
 		}
-		#skills .skills-other .skills-list {
+		.skills-other .skills-list {
 			font-size: 1rem;
 			padding-top: 30px;
 		}
-		#skills .skills-languages .language .text {
+		.skills-languages .language .text {
 			font-size: 0.9rem;
 		}
 	}
 
 	@media(min-width: 768px) {
-		#skills .skills-languages i {
+		.skills-languages i {
 			font-size: 75px;
 		}
-		#skills .skills-languages img {
+		.skills-languages img {
 		    width: 60%;
 		    height: 85%;
 		}
-		#skills .skills-languages .language {
+		.skills-languages .language {
 		  	padding-top: 40px;
 		}
 		#skills .skills-other .skills-list {
 			font-size: 1rem;
 			padding-top: 30px;
 		}
-		#skills .skills-languages .language .text {
+		.skills-languages .language .text {
 			font-size: 0.9rem;
 		}
 	}
 
 	@media(min-width: 992px) {
-		#skills .skills-languages i {
-			font-size: 80px;
+		.skills-languages .container {
+			width: 900px;
+			grid-template-columns: repeat(auto-fill, minmax(130px, 4fr));
+			grid-template-rows: 1fr;
 		}
 
-		#skills .skills-languages img {
-		    width: 75%;
-		    height: 90%;
+		.skills-languages i {
+			font-size: 60px;
 		}
-		#skills .skills-languages .language {
+
+		.skills-languages img {
+		    width: 50%;
+		    height: 75%;
+		}
+		.skills-languages .language {
 		  	padding-top: 40px;
 		}
 		#skills .skills-other .skills-list {
 			font-size: 1.1rem;
 			padding-top: 15px;
 		}
-		#skills .skills-languages .language .text {
+		.skills-languages .language .text {
 			font-size: 1rem;
 		}
 	}
@@ -493,7 +526,7 @@ h6,
 
 @media (max-width: 767px) {
 		.grid-wrapper {
-    		grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    		grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
 		}
 	}
 
